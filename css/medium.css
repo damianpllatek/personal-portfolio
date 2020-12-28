@@ -1,0 +1,22 @@
+.header__box-one__title {
+  font-size: 6rem;
+}
+
+.header__box-one__text {
+  font-size: 3rem;
+}
+
+.header__box-two .fab {
+  letter-spacing: .5em;
+  font-size: 3rem;
+}
+
+@media (min-width: 890px) {
+  .header__box-one__title {
+    font-size: 6.6rem;
+  }
+  .header__box-one__text {
+    font-size: 3.2rem;
+  }
+}
+/*# sourceMappingURL=medium.css.map */

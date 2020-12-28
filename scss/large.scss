@@ -1,0 +1,17 @@
+//HEADER
+
+.header {
+    &__box-one {
+        &__title {
+            font-size: 7.2rem;
+        }
+
+        &__text {
+            font-size: 3.4rem;
+        }
+    }
+
+    &__box-two {
+        bottom: 70px;
+    }
+}

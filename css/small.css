@@ -1,0 +1,21 @@
+.header__box-one__title {
+  font-size: 5rem;
+}
+
+.header__box-one__text {
+  font-size: 2.6rem;
+}
+
+.header__img {
+  right: 40px;
+}
+
+@media (min-width: 680px) {
+  .header__box-one__title {
+    font-size: 5.4rem;
+  }
+  .header__box-one__text {
+    font-size: 2.8rem;
+  }
+}
+/*# sourceMappingURL=small.css.map */

@@ -1,0 +1,37 @@
+//HEADER
+
+.header {
+    &__box-one {
+        &__title {
+            font-size: 6rem;
+        }
+
+        &__text {
+            font-size: 3rem;
+        }
+    }
+
+    &__box-two {
+        .fab {
+            letter-spacing: .5em;
+            font-size: 3rem;
+        }
+    }
+}
+
+
+//-------MEDIA-------
+
+@media (min-width: 890px) {
+    .header {
+        &__box-one {
+            &__title {
+                font-size: 6.6rem;
+            }
+
+            &__text {
+                font-size: 3.2rem;
+            }
+        }
+    }
+}
