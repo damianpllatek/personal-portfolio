@@ -6,8 +6,33 @@
   font-size: 2.6rem;
 }
 
-.header__img {
+.header__img-md {
+  display: none;
+}
+
+.header__img-big {
+  display: block;
+  position: absolute;
+  height: 100%;
   right: 40px;
+  bottom: 0;
+  z-index: -10;
+}
+
+.about__title {
+  font-size: 3.8rem;
+}
+
+.about__wrapper {
+  padding: 0 5em;
+}
+
+.about__wrapper__text__two {
+  font-size: 1.8rem;
+}
+
+.about__wrapper__img {
+  width: 420px;
 }
 
 @media (min-width: 680px) {

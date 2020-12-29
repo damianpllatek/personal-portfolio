@@ -24,9 +24,10 @@ body {
     background-color: $main-color;
 }
 
-.purple-color {
-    color: $purple-color;
+.blue-color {
+    color: $blue-color;
 }
+
 
 //NAV
 
@@ -116,7 +117,7 @@ body {
             width: 3px;
             height: 100%;
             transform: scaleY(0);
-            background-color: $menu-letters-color;
+            background-color: $blue-color;
             transition: transform .3s;
             content: '';
         }
@@ -191,7 +192,7 @@ body {
         }
 
         .fab:hover {
-            color: $purple-color;
+            color: $blue-color;
             transform: scale(1.2, 1.2);
         }
 
@@ -200,7 +201,7 @@ body {
         }
     }
 
-    &__img {
+    &__img-md {
         position: absolute;
         height: 100%;
         right: 0;
@@ -208,7 +209,56 @@ body {
         z-index: -10;
     }
 
+    &__img-big {
+        display: none;
+    }
+
 }
+
+//ABOUT
+
+.about {
+    text-align: center;
+    color: $white-color;
+
+    &__title {
+        padding-top: 3.4em;
+        font-size: 3rem;
+    }
+
+    &__text {
+        padding-top: .5em;
+        font-size: 1.4rem;
+    }
+
+    &__wrapper {
+        padding: 3em 1em;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+
+        &__text {
+            padding-top: 2em;
+            font-weight: 300;
+
+            &__one {
+                font-size: 2rem;
+            }
+
+            &__two {
+                padding-top: 1em;
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+        }
+
+        &__img {
+            width: 270px;
+        }
+    }
+}
+
+
 
 
 //------MEDIA-------//
@@ -227,6 +277,16 @@ body {
     }
 }
 
+@media (min-width: 310px) {
+    .about {
+        &__wrapper {
+            &__img {
+                width: 300px;
+            }
+        }
+    }
+}
+
 @media (min-width: 400px) {
     .header {
         &__box-one {
@@ -236,6 +296,40 @@ body {
 
             &__text {
                 font-size: 2.1rem;
+            }
+        }
+
+
+    }
+
+    .about {
+        &__title {
+            padding-top: 3.4em;
+            font-size: 3.4rem;
+        }
+
+        &__text {
+            padding-top: .5em;
+            font-size: 1.6rem;
+        }
+
+        &__wrapper {
+            &__text {
+                padding-top: 2em;
+
+                &__one {
+                    font-size: 2.2rem;
+                }
+
+                &__two {
+                    padding-top: 1.4em;
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                }
+            }
+
+            &__img {
+                width: 380px;
             }
         }
     }
@@ -250,6 +344,31 @@ body {
 
             &__text {
                 font-size: 2.4rem;
+            }
+        }
+    }
+
+    .about {
+        &__title {
+            font-size: 3.6rem;
+        }
+
+        &__wrapper {
+            padding: 0 2.2em;
+
+            &__text {
+                &__one {
+                    font-size: 2.4rem;
+                }
+
+                &__two {
+                    font-size: 1.8rem;
+                }
+            }
+
+            &__img {
+                padding-top: 3em;
+                width: 420px;
             }
         }
     }

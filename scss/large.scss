@@ -1,3 +1,19 @@
+//LOGO
+
+.logo {
+    width: 100px;
+    height: 100px;
+    top: 40px;
+    left: 40px;
+}
+
+//NAV
+
+.burger-btn {
+    top: 40px;
+    right: 40px;
+}
+
 //HEADER
 
 .header {
@@ -13,5 +29,113 @@
 
     &__box-two {
         bottom: 70px;
+    }
+}
+
+//ABOUT
+
+.about {
+    &__title {
+        font-size: 4.4rem;
+    }
+
+    &__wrapper {
+        flex-wrap: nowrap;
+        padding: 3em 1.6em;
+
+        &__text {
+            padding-top: 3.4em;
+            padding-right: 3em;
+
+            &__one {
+                font-size: 3rem;
+            }
+
+            &__two {
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+        }
+
+        &__img {
+            padding-top: 0;
+            width: 400px;
+        }
+    }
+}
+
+//-------MEDIA-------
+
+@media (min-width: 1030px) {
+    .about {
+        &__wrapper {
+            flex-wrap: nowrap;
+            padding: 3em 1.6em;
+
+            &__text {
+                padding: 3.4em 3em 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 1130px) {
+    .about {
+        &__wrapper {
+            &__img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1330px) {
+    .about {
+        &__wrapper {
+            padding: 3.4em 2em;
+
+            &__text {
+                &__one {
+                    font-size: 3.6rem;
+                }
+
+                &__two {
+                    font-size: 2.2rem;
+                    line-height: 2.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .about {
+        &__wrapper {
+            padding: 3.4em 4em;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .about {
+        &__wrapper {
+            padding: 3.4em 6em;
+        }
+    }
+}
+
+@media (min-width: 1700px) {
+    .about {
+        &__wrapper {
+            padding: 3.4em 8em;
+        }
+    }
+}
+
+@media (min-width: 1800px) {
+    .about {
+        &__wrapper {
+            padding: 3.4em 10em;
+        }
     }
 }

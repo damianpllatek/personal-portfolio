@@ -20,8 +20,8 @@ body {
   background-color: #171717;
 }
 
-.purple-color {
-  color: #c70039;
+.blue-color {
+  color: #035aa6;
 }
 
 .burger-btn {
@@ -122,7 +122,7 @@ body {
   height: 100%;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
-  background-color: #ffffffcc;
+  background-color: #035aa6;
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
   transition: transform .3s;
@@ -227,7 +227,7 @@ body {
 }
 
 .header__box-two .fab:hover {
-  color: #c70039;
+  color: #035aa6;
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
 }
@@ -236,12 +236,62 @@ body {
   color: #ffffffcc;
 }
 
-.header__img {
+.header__img-md {
   position: absolute;
   height: 100%;
   right: 0;
   bottom: 0;
   z-index: -10;
+}
+
+.header__img-big {
+  display: none;
+}
+
+.about {
+  text-align: center;
+  color: #f5f5f5;
+}
+
+.about__title {
+  padding-top: 3.4em;
+  font-size: 3rem;
+}
+
+.about__text {
+  padding-top: .5em;
+  font-size: 1.4rem;
+}
+
+.about__wrapper {
+  padding: 3em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about__wrapper__text {
+  padding-top: 2em;
+  font-weight: 300;
+}
+
+.about__wrapper__text__one {
+  font-size: 2rem;
+}
+
+.about__wrapper__text__two {
+  padding-top: 1em;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.about__wrapper__img {
+  width: 270px;
 }
 
 @media (min-width: 290px) {
@@ -253,12 +303,40 @@ body {
   }
 }
 
+@media (min-width: 310px) {
+  .about__wrapper__img {
+    width: 300px;
+  }
+}
+
 @media (min-width: 400px) {
   .header__box-one__title {
     font-size: 4rem;
   }
   .header__box-one__text {
     font-size: 2.1rem;
+  }
+  .about__title {
+    padding-top: 3.4em;
+    font-size: 3.4rem;
+  }
+  .about__text {
+    padding-top: .5em;
+    font-size: 1.6rem;
+  }
+  .about__wrapper__text {
+    padding-top: 2em;
+  }
+  .about__wrapper__text__one {
+    font-size: 2.2rem;
+  }
+  .about__wrapper__text__two {
+    padding-top: 1.4em;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+  .about__wrapper__img {
+    width: 380px;
   }
 }
 
@@ -268,6 +346,22 @@ body {
   }
   .header__box-one__text {
     font-size: 2.4rem;
+  }
+  .about__title {
+    font-size: 3.6rem;
+  }
+  .about__wrapper {
+    padding: 0 2.2em;
+  }
+  .about__wrapper__text__one {
+    font-size: 2.4rem;
+  }
+  .about__wrapper__text__two {
+    font-size: 1.8rem;
+  }
+  .about__wrapper__img {
+    padding-top: 3em;
+    width: 420px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -17,37 +17,36 @@
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/medium.css">
     <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/large.css">
 </head>
-<body> 
+<body>
     <button class="burger-btn" aria-label="Menu button">
         <div class="burger-btn__box">
             <div class="burger-btn__bars"></div>
         </div>
-    </button>    
+    </button>
+    
     <nav class="nav">
         <div class="nav__items">
-            <a href="#" class="nav__item">Home</a>
-            <a href="about.html" class="nav__item">About</a>
+            <a href="index.html" class="nav__item">Home</a>
+            <a href="#" class="nav__item">About</a>
             <a href="#" class="nav__item">Portfolio</a>
             <a href="#" class="nav__item">Offer</a>
             <a href="#" class="nav__item">Contact</a>
         </div>
     </nav>
-    <header class="header">
-        <div id="header-animation" class="header__animation"></div>
-        <div class="header__box-one">
-            <h1 class="header__box-one__title"><span class="blue-color">Damian</span> Płatek</h1>
-            <p class="header__box-one__text">I'm a <span class="blue-color txt-rotate" data-period="2000" data-rotate='[ "Frontend Developer.", "Freelancer.", "Social Media Marketer." ]'></span></p>
+    
+    <section class="about">
+        <h1 class="about__title">About <span class="blue-color">Me</span></h1>
+        <p class="about__text">Get to know <span class="blue-color">me.</span></p>
+        
+        <div class="about__wrapper">
+            <div class="about__wrapper__text">
+                <p class="about__wrapper__text__one">I'm 29 years old creative <span class="blue-color">junior frontend developer</span> from Cracow, Poland.</p>
+                <p class="about__wrapper__text__two">I have always been interested in new and innovative technologies. I have been learning web application programming for several months, which has turned into a strong passion. Every day I try to develop my skills as a junior frontend developer. Currently, I am in the process of postgraduate studies at the AGH University of Science and Technology in programming web applications.</p>
+            </div>
+            <img class="about__wrapper__img" src="/img/damian-img.png" alt="Black and white Damians photo">   
         </div>
-        <div class="header__box-two">
-            <a href="https://www.facebook.com/mmroowa"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://www.instagram.com/pllatko"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/damian-p%C5%82atek-0187821b3/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/damianpllatek"><i class="fab fa-github"></i></a>
-        </div>
-        <img src="/img/header-img-md.png" alt="Authors photo" class="header__img-md">
-        <img src="/img/header-img-big.png" alt="Authors photo" class="header__img-big">
-    </header>
-    <script src="/particles/particles.min.js"></script>
+    </section>
+
     <script src="js/script.js"></script>
 </body>
 </html>

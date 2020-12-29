@@ -1,3 +1,9 @@
+//LOGO
+
+.logo {
+    left: 35px;
+}
+
 //HEADER
 
 .header {
@@ -19,10 +25,43 @@
     }
 }
 
+//ABOUT
+
+.about {
+    &__title {
+        font-size: 4rem;
+    }
+
+    &__wrapper {
+        padding-bottom: 5em;
+
+        &__text {
+            &__one {
+                font-size: 2.8rem;
+            }
+
+            &__two {
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+        }
+
+        &__img {
+            width: 500px;
+        }
+    }
+}
 
 //-------MEDIA-------
 
 @media (min-width: 890px) {
+
+    .logo {
+        width: 90px;
+        height: 90px;
+        left: 35px;
+    }
+
     .header {
         &__box-one {
             &__title {
