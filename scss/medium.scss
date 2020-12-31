@@ -52,6 +52,13 @@
     }
 }
 
+.technologies {
+    &__title {
+        padding-top: 2.2em;
+        font-size: 4rem;
+    }
+}
+
 //-------MEDIA-------
 
 @media (min-width: 890px) {
@@ -70,6 +77,21 @@
 
             &__text {
                 font-size: 3.2rem;
+            }
+        }
+    }
+
+    .technologies {
+        &__wrapper {
+            padding: 4em 1em;
+
+            &__container {
+                width: 90vw;
+
+                &__icon {
+                    padding: .4em .5em;
+                    font-size: 11.4rem;
+                }
             }
         }
     }

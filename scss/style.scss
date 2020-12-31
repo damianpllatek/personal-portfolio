@@ -258,10 +258,53 @@ body {
     }
 }
 
+.technologies {
+    text-align: center;
+    color: $white-color;
+
+    &__title {
+        padding: 1em 1em 0;
+        font-size: 3rem;
+    }
+
+    &__wrapper {
+        padding: 2em 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $menu-letters-color;
+
+        &__container {
+            width: 90vw;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            &__icon {
+                padding: .2em;
+                font-size: 7rem;
+            }
+        }
+    }
+}
 
 
+//------MEDIA------- 
 
-//------MEDIA-------//
+@media (min-width: 280px) {
+    .technologies {
+        &__wrapper {
+            &__container {
+                &__icon {
+                    font-size: 8rem;
+                }
+            }
+        }
+    }
+}
+
 
 @media (min-width: 290px) {
     .header {
@@ -285,6 +328,28 @@ body {
             }
         }
     }
+
+    .technologies {
+        &__wrapper {
+            &__container {
+                &__icon {
+                    font-size: 9.4rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 370px) {
+    .technologies {
+        &__wrapper {
+            &__container {
+                &__icon {
+                    font-size: 10.4rem;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 400px) {
@@ -298,13 +363,10 @@ body {
                 font-size: 2.1rem;
             }
         }
-
-
     }
 
     .about {
         &__title {
-            padding-top: 3.4em;
             font-size: 3.4rem;
         }
 
@@ -330,6 +392,21 @@ body {
 
             &__img {
                 width: 380px;
+            }
+        }
+    }
+
+    .technologies {
+        &__title {
+            font-size: 3.4rem;
+        }
+
+        &__wrapper {
+            &__container {
+                &__icon {
+                    padding: .2em .3em;
+                    font-size: 10.8rem;
+                }
             }
         }
     }
@@ -369,6 +446,23 @@ body {
             &__img {
                 padding-top: 3em;
                 width: 420px;
+            }
+        }
+    }
+
+    .technologies {
+        &__title {
+            padding-top: 2.8em;
+            font-size: 3.6rem;
+        }
+
+        &__wrapper {
+            &__container {
+                width: 70vw;
+
+                &__icon {
+                    font-size: 11.4rem;
+                }
             }
         }
     }

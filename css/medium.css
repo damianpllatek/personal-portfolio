@@ -36,6 +36,11 @@
   width: 500px;
 }
 
+.technologies__title {
+  padding-top: 2.2em;
+  font-size: 4rem;
+}
+
 @media (min-width: 890px) {
   .logo {
     width: 90px;
@@ -47,6 +52,16 @@
   }
   .header__box-one__text {
     font-size: 3.2rem;
+  }
+  .technologies__wrapper {
+    padding: 4em 1em;
+  }
+  .technologies__wrapper__container {
+    width: 90vw;
+  }
+  .technologies__wrapper__container__icon {
+    padding: .4em .5em;
+    font-size: 11.4rem;
   }
 }
 /*# sourceMappingURL=medium.css.map */

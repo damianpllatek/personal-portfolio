@@ -44,6 +44,24 @@
             width: 420px;
         }
     }
+
+}
+
+.technologies {
+    &__title {
+        font-size: 3.8rem;
+    }
+
+    &__wrapper {
+        &__container {
+            width: 100vw;
+
+            &__icon {
+                padding: .2em .2em;
+                font-size: 10rem;
+            }
+        }
+    }
 }
 
 //--------MEDIA--------
@@ -57,6 +75,23 @@
 
             &__text {
                 font-size: 2.8rem;
+            }
+        }
+    }
+
+    .technologies {
+        &__title {
+            font-size: 3.8rem;
+        }
+
+        &__wrapper {
+            &__container {
+                width: 100vw;
+
+                &__icon {
+                    padding: .3em;
+                    font-size: 11rem;
+                }
             }
         }
     }

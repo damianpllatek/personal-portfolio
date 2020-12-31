@@ -35,12 +35,35 @@
   width: 420px;
 }
 
+.technologies__title {
+  font-size: 3.8rem;
+}
+
+.technologies__wrapper__container {
+  width: 100vw;
+}
+
+.technologies__wrapper__container__icon {
+  padding: .2em .2em;
+  font-size: 10rem;
+}
+
 @media (min-width: 680px) {
   .header__box-one__title {
     font-size: 5.4rem;
   }
   .header__box-one__text {
     font-size: 2.8rem;
+  }
+  .technologies__title {
+    font-size: 3.8rem;
+  }
+  .technologies__wrapper__container {
+    width: 100vw;
+  }
+  .technologies__wrapper__container__icon {
+    padding: .3em;
+    font-size: 11rem;
   }
 }
 /*# sourceMappingURL=small.css.map */
