@@ -290,6 +290,19 @@ body {
     }
 }
 
+.footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-color;
+    font-size: 1.4rem;
+    text-align: center;
+    color: $white-color;
+    letter-spacing: .1rem;
+}
 
 //------MEDIA------- 
 
