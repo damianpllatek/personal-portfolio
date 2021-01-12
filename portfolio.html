@@ -17,38 +17,49 @@
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/medium.css">
     <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/large.css">
 </head>
-<body> 
+<body>
     <button class="burger-btn" aria-label="Menu button">
         <div class="burger-btn__box">
             <div class="burger-btn__bars"></div>
         </div>
-    </button>    
+    </button>
+    
     <nav class="nav">
         <div class="nav__items">
-            <a href="#" class="nav__item">Home</a>
+            <a href="index.html" class="nav__item">Home</a>
             <a href="about.html" class="nav__item">About Me</a>
-            <a href="portfolio.html" class="nav__item">Portfolio</a>
+            <a href="#" class="nav__item">Portfolio</a>
             <a href="#" class="nav__item">Offer</a>
             <a href="#" class="nav__item">Contact</a>
         </div>
-    </nav>
-    <header class="header">
-        <div id="header-animation" class="header__animation"></div>
-        <div class="header__box-one">
-            <h1 class="header__box-one__title"><span class="blue-color">Damian</span> Płatek</h1>
-            <p class="header__box-one__text">I'm a <span class="blue-color txt-rotate" data-period="2000" data-rotate='[ "Frontend Developer.", "Freelancer.", "Social Media Marketer." ]'></span></p>
+    </nav>  
+    <section class="portfolio">
+        <h1 class="portfolio__title">My <span class="blue-color">Portfolio</span></h1>
+        <p class="portfolio__text">Check my <span class="blue-color">Projects</span></p>
+
+        <div class="portfolio__container">
+            <div class="portfolio__container__left-box">
+                <div class="portfolio__container__left-box__image">
+                    <a href="http://www.vitalstudio.krakow.pl" rel="noopener" target="_blank" class="portfolio__container__left-box__image__link">
+                        <img src="/img/projects/vitalstudio.png" alt="Vital Studio Project Screenshoot" class="portfolio__container__left-box__image__link__img">
+                    </a>
+                </div>
+                <div class="portfolio__container__left-box__content">
+                    <h2 class="portfolio__container__left-box__content__title">Vital Studio Kraków</h2>
+                    <p class="portfolio__container__left-box__content__text"> Website created for the Vital Studio Kraków company. I used technologies such as HTML, CSS, Java Script and Bootstrap to create the project.</p>
+                    <a href="http://www.vitalstudio.krakow.pl" rel="noopener" target="_blank" class="portfolio__container__left-box__content__btn">View Project</a>
+                </div>
+            </div>
         </div>
-        <div class="header__box-two">
-            <a href="https://www.facebook.com/mmroowa"><i class="fab fa-facebook-square"></i> </a>
-            <a href="https://www.instagram.com/pllatko"><i class="fab fa-instagram"></i> </a>
-            <a href="https://www.linkedin.com/in/damian-p%C5%82atek-0187821b3/"><i class="fab fa-linkedin"></i> </a>
-            <a href="https://github.com/damianpllatek"><i class="fab fa-github"></i> </a>
-        </div>
-        <img src="/img/header-img-md.png" alt="Authors photo" class="header__img-md">
-        <img src="/img/header-img-big.png" alt="Authors photo" class="header__img-big">
-    </header>
-    <script src="/particles/particles.min.js"></script>
-    <script src="js/particles-animation.js"></script>
+
+
+
+    </section>
+    <footer class="footer">
+        <p class="footer__text">&copy; Damian Płatek. All rights reserved.</p>
+    </footer>
+
+
     <script src="js/script.js"></script>
 </body>
 </html>

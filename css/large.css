@@ -55,6 +55,10 @@
   font-size: 4.4rem;
 }
 
+.portfolio__title {
+  font-size: 4.4rem;
+}
+
 @media (min-width: 1030px) {
   .about__wrapper {
     -ms-flex-wrap: nowrap;

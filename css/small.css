@@ -48,6 +48,10 @@
   font-size: 10rem;
 }
 
+.portfolio__title {
+  font-size: 3.8rem;
+}
+
 @media (min-width: 680px) {
   .header__box-one__title {
     font-size: 5.4rem;

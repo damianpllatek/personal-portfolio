@@ -290,6 +290,87 @@ body {
     }
 }
 
+// PORTFOLIO
+
+.portfolio {
+    text-align: center;
+    color: $white-color;
+
+    &__title {
+        padding-top: 3.4em;
+        font-size: 3rem;
+    }
+
+    &__text {
+        padding-top: .5em;
+        font-size: 1.4rem;
+    }
+
+    &__container {
+        margin-top: 2em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        background-color: tomato;
+
+        &__left-box {
+            position: relative;
+            margin: .6em;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: royalblue;
+
+            &__image {
+                &__link {
+                    &__img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            &__content {
+                display: flex;
+                flex-direction: column;
+                background-color: $dark-color;
+
+                &__title {
+                    padding: .4em .4em 0;
+                    text-align: left;
+                    color: $blue-color;
+                }
+
+                &__text {
+                    padding: .8em .8em 1.8em;
+                    text-align: left;
+                    font-size: 1.4rem;
+                }
+
+                &__btn {
+                    align-self: center;
+                    width: 120px;
+                    margin-bottom: 20px;
+                    padding: .5em 1em;
+                    background: none;
+                    border: 1px solid $blue-color;
+                    text-decoration: none;
+                    font-size: 1.4rem;
+                    color: $blue-color;
+                    cursor: pointer;
+                    transition: background-color .3s;
+                }
+
+                &__btn:hover {
+                    background-color: $blue-color;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}
+
 .footer {
     width: 100%;
     height: 100px;
@@ -300,8 +381,8 @@ body {
     background-color: $dark-color;
     font-size: 1.4rem;
     text-align: center;
-    color: $white-color;
     letter-spacing: .1rem;
+    color: $white-color;
 }
 
 //------MEDIA------- 
@@ -423,6 +504,17 @@ body {
             }
         }
     }
+
+    .portfolio {
+        &__title {
+            font-size: 3.4rem;
+        }
+
+        &__text {
+            padding-top: .5em;
+            font-size: 1.6rem;
+        }
+    }
 }
 
 @media (min-width: 500px) {
@@ -477,6 +569,12 @@ body {
                     font-size: 11.4rem;
                 }
             }
+        }
+    }
+
+    .portfolio {
+        &__title {
+            font-size: 3.6rem;
         }
     }
 }

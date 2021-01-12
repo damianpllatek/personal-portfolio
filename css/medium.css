@@ -41,6 +41,10 @@
   font-size: 4rem;
 }
 
+.portfolio__title {
+  font-size: 4rem;
+}
+
 @media (min-width: 890px) {
   .logo {
     width: 90px;
