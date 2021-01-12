@@ -76,6 +76,40 @@
     &__title {
         font-size: 4.4rem;
     }
+
+    &__container {
+        padding-bottom: 10em;
+
+        &__left-box {
+            width: 990px;
+            height: 500px;
+            flex-wrap: nowrap;
+            flex-direction: row;
+
+            &__image {
+                &__link {
+                    &__img-lg {
+                        position: absolute;
+                        top: 0;
+                        left: -70px;
+                        width: 500px;
+                        height: 350px;
+                    }
+                }
+            }
+
+            &__content {
+                position: absolute;
+                bottom: -70px;
+                right: -70px;
+                width: 500px;
+                height: 350px;
+
+
+            }
+
+        }
+    }
 }
 
 
@@ -89,6 +123,27 @@
 
             &__text {
                 padding: 3.4em 3em 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 1100px) {
+    .portfolio {
+        &__container {
+            &__left-box {
+                &__image {
+                    &__link {
+                        &__img-lg {
+                            left: -50px;
+                        }
+                    }
+                }
+
+                &__content {
+                    bottom: -70px;
+                    right: -50px;
+                }
             }
         }
     }
@@ -120,6 +175,64 @@
     }
 }
 
+@media (min-width: 1160px) {
+    .portfolio {
+        &__container {
+            &__left-box {
+                &__image {
+                    &__link {
+                        &__img-lg {
+                            width: 550px;
+                            height: 370px;
+                            left: -70px;
+                        }
+                    }
+                }
+
+                &__content {
+                    width: 550px;
+                    height: 370px;
+                    right: -70px;
+
+                    &__title {
+                        font-size: 3.6rem;
+                    }
+
+                    &__text {
+                        font-size: 2rem;
+                    }
+
+                    &__btn {
+                        width: 180px;
+                        padding: .6em 2em;
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1230px) {
+    .portfolio {
+        &__container {
+            &__left-box {
+                &__image {
+                    &__link {
+                        &__img-lg {
+                            left: -40px;
+                        }
+                    }
+                }
+
+                &__content {
+                    right: -40px;
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 1330px) {
     .about {
         &__wrapper {
@@ -133,6 +246,24 @@
                 &__two {
                     font-size: 2.2rem;
                     line-height: 2.8rem;
+                }
+            }
+        }
+    }
+
+    .portfolio {
+        &__container {
+            &__left-box {
+                &__image {
+                    &__link {
+                        &__img-lg {
+                            left: -15px;
+                        }
+                    }
+                }
+
+                &__content {
+                    right: -15px;
                 }
             }
         }

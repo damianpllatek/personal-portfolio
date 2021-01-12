@@ -65,6 +65,12 @@
     &__title {
         font-size: 4rem;
     }
+
+    &__container {
+        &__left-box {
+            max-width: 75%;
+        }
+    }
 }
 
 //-------MEDIA-------

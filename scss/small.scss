@@ -70,6 +70,37 @@
     &__title {
         font-size: 3.8rem;
     }
+
+    &__container {
+        &__left-box {
+            max-width: 80%;
+
+            &__image {
+                &__link {
+                    &__img {
+                        display: none;
+                    }
+
+                    &__img-lg {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                    }
+                }
+            }
+
+            &__content {
+
+                &__title {
+                    padding: 1.2em 1.2em 0;
+                }
+
+                &__text {
+                    padding: 1.8em 1.8em 2.2em;
+                }
+            }
+        }
+    }
 }
 
 //--------MEDIA--------
@@ -99,6 +130,45 @@
                 &__icon {
                     padding: .3em;
                     font-size: 11rem;
+                }
+            }
+        }
+    }
+
+    .portfolio {
+        &__container {
+            &__left-box {
+                &__content {
+                    padding-bottom: 2em;
+
+                    &__title {
+                        padding: 1.4em 1.4em 0;
+                    }
+
+                    &__text {
+                        padding: 2em 2em 2.8em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .portfolio {
+        &__container {
+            padding-top: 1.6em;
+
+            &__left-box {
+
+                &__content {
+                    &__title {
+                        font-size: 3rem;
+                    }
+
+                    &__text {
+                        font-size: 1.8rem;
+                    }
                 }
             }
         }

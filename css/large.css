@@ -59,6 +59,37 @@
   font-size: 4.4rem;
 }
 
+.portfolio__container {
+  padding-bottom: 10em;
+}
+
+.portfolio__container__left-box {
+  width: 990px;
+  height: 500px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.portfolio__container__left-box__image__link__img-lg {
+  position: absolute;
+  top: 0;
+  left: -70px;
+  width: 500px;
+  height: 350px;
+}
+
+.portfolio__container__left-box__content {
+  position: absolute;
+  bottom: -70px;
+  right: -70px;
+  width: 500px;
+  height: 350px;
+}
+
 @media (min-width: 1030px) {
   .about__wrapper {
     -ms-flex-wrap: nowrap;
@@ -67,6 +98,16 @@
   }
   .about__wrapper__text {
     padding: 3.4em 3em 0;
+  }
+}
+
+@media (min-width: 1100px) {
+  .portfolio__container__left-box__image__link__img-lg {
+    left: -50px;
+  }
+  .portfolio__container__left-box__content {
+    bottom: -70px;
+    right: -50px;
   }
 }
 
@@ -83,6 +124,39 @@
   }
 }
 
+@media (min-width: 1160px) {
+  .portfolio__container__left-box__image__link__img-lg {
+    width: 550px;
+    height: 370px;
+    left: -70px;
+  }
+  .portfolio__container__left-box__content {
+    width: 550px;
+    height: 370px;
+    right: -70px;
+  }
+  .portfolio__container__left-box__content__title {
+    font-size: 3.6rem;
+  }
+  .portfolio__container__left-box__content__text {
+    font-size: 2rem;
+  }
+  .portfolio__container__left-box__content__btn {
+    width: 180px;
+    padding: .6em 2em;
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 1230px) {
+  .portfolio__container__left-box__image__link__img-lg {
+    left: -40px;
+  }
+  .portfolio__container__left-box__content {
+    right: -40px;
+  }
+}
+
 @media (min-width: 1330px) {
   .about__wrapper {
     padding: 3.4em 2em;
@@ -93,6 +167,12 @@
   .about__wrapper__text__two {
     font-size: 2.2rem;
     line-height: 2.8rem;
+  }
+  .portfolio__container__left-box__image__link__img-lg {
+    left: -15px;
+  }
+  .portfolio__container__left-box__content {
+    right: -15px;
   }
 }
 

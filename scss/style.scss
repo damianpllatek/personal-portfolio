@@ -313,20 +313,24 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        background-color: tomato;
+        // background-color: tomato;
 
         &__left-box {
             position: relative;
             margin: .6em;
             display: flex;
             flex-wrap: wrap;
-            background-color: royalblue;
+            // background-color: royalblue;
 
             &__image {
                 &__link {
                     &__img {
                         width: 100%;
                         height: 100%;
+                    }
+
+                    &__img-lg {
+                        display: none;
                     }
                 }
             }
@@ -432,6 +436,29 @@ body {
             }
         }
     }
+
+    .portfolio {
+        &__container {
+            &__left-box {
+                margin: .7em;
+
+                &__content {
+                    &__title {
+                        padding: .6em .6em 0;
+                    }
+
+                    &__text {
+
+                        padding: 1.1em 1.1em 1.8em;
+                    }
+
+                    &__btn {
+                        margin-bottom: 2.3em;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 370px) {
@@ -440,6 +467,25 @@ body {
             &__container {
                 &__icon {
                     font-size: 10.4rem;
+                }
+            }
+        }
+    }
+
+    .portfolio {
+        &__container {
+            &__left-box {
+                margin: .8em;
+
+                &__content {
+                    &__title {
+                        padding: .7em .7em 0;
+                    }
+
+                    &__text {
+
+                        padding: 1.3em 1.3em 2em;
+                    }
                 }
             }
         }
@@ -514,6 +560,46 @@ body {
             padding-top: .5em;
             font-size: 1.6rem;
         }
+
+        &__container {
+            &__left-box {
+                margin: 1em;
+
+                &__content {
+                    &__title {
+                        font-size: 2.8rem;
+                        padding: .7em .7em 0;
+                    }
+
+                    &__text {
+                        font-size: 1.6rem;
+                        padding: 1.3em 1.3em 2em;
+                    }
+
+                    &__btn {
+                        width: 150px;
+                        margin-top: .6em;
+                        margin-bottom: 2.8em;
+                        padding: .6em 2em;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 465px) {
+    .portfolio {
+        &__container {
+            margin-top: 3em;
+
+            &__left-box {
+                max-width: 433px;
+                justify-content: center;
+            }
+        }
     }
 }
 
@@ -576,5 +662,23 @@ body {
         &__title {
             font-size: 3.6rem;
         }
+
+        &__container {
+            &__left-box {
+                justify-content: center;
+
+                &__content {
+
+                    &__title {
+                        padding: .9em .9em 0;
+                    }
+
+                    &__text {
+                        padding: 1.5em 1.5em 2em;
+                    }
+                }
+            }
+        }
+
     }
 }
