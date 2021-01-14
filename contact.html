@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" 
+        content="portfolio, tworzenie stron internetowych, strona www, strona internetowa dla biznesu, freelancer">
+    <meta name="description"
+        content="Zajmuję się tworzeniem profesjonalnych stron WWW dla firm oraz osób prywatnych. Jeżeli potrzebujesz strony WWW, która będzie Twoją wizytówką, sklepu internetowego, bloga itd. to dobrze trafiłeś.">
+    <title>Damian Płatek - Frontend Developer</title>
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8632156806.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 576px)" href="css/small.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/large.css">
+</head>
+<body>
+    <button class="burger-btn" aria-label="Menu button">
+        <div class="burger-btn__box">
+            <div class="burger-btn__bars"></div>
+        </div>
+    </button>
+    
+    <nav class="nav">
+        <div class="nav__items">
+            <a href="index.html" class="nav__item">Home</a>
+            <a href="about.html" class="nav__item">About Me</a>
+            <a href="portfolio.html" class="nav__item">Portfolio</a>
+            <a href="#" class="nav__item">Contact</a>
+        </div>
+    </nav>  
+    <section class="contact">
+        <h1 class="contact__title">Contact <span class="blue-color">Me</span></h1>
+        <p class="contact__text">Get in <span class="blue-color">Touch.</span></p>
+
+        <div class="contact__container">
+            <div class="contact__container__box">
+                <form class="contact__container__box__forms">
+                    <div class="contact__container__box__forms__input-line">
+                        <label for="name" class="contact__container__box__forms__input-line__label">Name:</label>
+                        <input type="text" id="name" name="name" class="contact__container__box__forms__input-line__input-name" required>
+                        <label for="email" class="contact__container__box__forms__input-line__label">Email:</label>
+                        <input type="text" id="email" name="email" class="contact__container__box__forms__input-line__input-email" required>
+                    </div>
+                    <label for="subject" class="contact__container__box__forms__label">Subject:</label>
+                    <input type="text" id="subject" name="subject" class="contact__container__box__forms__input-subject">
+                    <label for="message" class="contact__container__box__forms__label">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10" class="contact__container__box__forms__input-textarea" required></textarea>
+                    <button type="submit" class="contact__container__box__forms__btn">Submit</button>
+                </form>
+
+                <div class="contact__container__box__image">
+                    <div class="contact__container__box__image__shadow"></div>
+                    <img src="./img/cracow.png" alt="Main market square in Cracow" class="contact__container__box__image__img">
+                    <h2 class="contact__container__box__image__heading">Contact Info</h2>
+                    <div class="contact__container__box__image__text">
+                        <div class="contact__container__box__image__text__content">
+                            <h3 class="contact__container__box__image__text__content__title">Name</h3>
+                            <p class="contact__container__box__image__text__content__text">Damian Płatek</p>
+                        </div>
+                        <div class="contact__container__box__image__text__content">
+                            <h3 class="contact__container__box__image__text__content__title">Location</h3>
+                            <p class="contact__container__box__image__text__content__text">Cracow, Poland</p>
+                        </div>
+                        <div class="contact__container__box__image__text__content">
+                            <h3 class="contact__container__box__image__text__content__title">Call</h3>
+                            <p class="contact__container__box__image__text__content__text">+48 696-884-116</p>
+                        </div>
+                        <div class="contact__container__box__image__text__content">
+                            <h3 class="contact__container__box__image__text__content__title">Email</h3>
+                            <p class="contact__container__box__image__text__content__text">damianpllatek@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <footer class="footer">
+        <p class="footer__text">&copy; Damian Płatek. All rights reserved.</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

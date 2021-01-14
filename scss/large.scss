@@ -81,6 +81,7 @@
         padding-bottom: 10em;
 
         &__left-box {
+            margin-bottom: 10em;
             width: 990px;
             height: 500px;
             flex-wrap: nowrap;
@@ -104,14 +105,50 @@
                 right: -70px;
                 width: 500px;
                 height: 350px;
-
-
             }
 
         }
     }
 }
 
+//CONTACT
+
+.contact {
+    &__title {
+        font-size: 4.4rem;
+    }
+
+    &__container {
+        margin-top: 6em;
+
+        &__box {
+            flex-direction: row;
+
+            &__forms {
+                padding-right: 2em;
+                max-width: 400px;
+                // background-color: tomato;
+            }
+
+            &__image {
+                margin: 0 0 4em 2em;
+                max-width: 380px;
+
+                &__heading {
+                    padding: 1.2em 0;
+                    font-size: 3.4rem;
+                }
+
+                &__text {
+
+                    &__content {
+                        padding: 1.4em 0;
+                    }
+                }
+            }
+        }
+    }
+}
 
 //-------MEDIA-------
 
@@ -143,6 +180,26 @@
                 &__content {
                     bottom: -70px;
                     right: -50px;
+                }
+            }
+        }
+    }
+
+    .contact {
+        &__container {
+            margin-top: 7em;
+
+            &__box {
+
+                &__forms {
+                    padding-right: 2em;
+                    max-width: 420px;
+                    // background-color: tomato;
+                }
+
+                &__image {
+                    margin: 0 0 4em 3em;
+                    max-width: 380px;
                 }
             }
         }
@@ -233,6 +290,25 @@
     }
 }
 
+@media (min-width: 1300px) {
+    .contact {
+        &__container {
+            &__box {
+                &__forms {
+                    padding-right: 2.4em;
+                    max-width: 500px;
+                    // background-color: tomato;
+                }
+
+                &__image {
+                    margin: 0 0 5em 4em;
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 1330px) {
     .about {
         &__wrapper {
@@ -293,6 +369,18 @@
     .about {
         &__wrapper {
             padding: 3.4em 6em;
+        }
+    }
+
+    .contact {
+        &__container {
+            &__box {
+
+                &__image {
+                    margin: 0 0 5.4em 4em;
+                    max-width: 420px;
+                }
+            }
         }
     }
 }
